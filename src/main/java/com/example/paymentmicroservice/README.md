@@ -78,7 +78,35 @@ Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
     `mercadoPagoPaymentId`, `qrCode/codigoBarras/linkPagamento`,
     `criadoEm`, `atualizadoEm`
 
+### 6) TransacaoPagamento
 
+-   `id`, `pagamentoId`, `requestPayload`, `responsePayload`,
+    `statusRetornado`, `mensagemErro`, `timestamp`
+
+### 7) NotificacaoWebhook
+
+-   `id`, `tipo`, `identificadorExterno`, `payload`, `processada`,
+    `recebidaEm`
+
+------------------------------------------------------------------------
+
+## DTOs
+
+-   **Entrada**: `VendaRequest`
+-   **Saída**: `VendaResponse`, `PagamentoResponse`
+-   **Webhook**: `WebhookMercadoPagoDTO`
+
+------------------------------------------------------------------------
+
+## Endpoints REST
+
+-   `POST /vendas` → cria a venda e inicia o pagamento.
+-   `GET /vendas/{id}` → consulta status da venda.
+-   `GET /pagamentos/{id}` → consulta status do pagamento.
+-   `POST /webhooks/mercadopago` → recebe notificações do MP.
+-   (opcional) `POST /pagamentos/{id}/reprocessar`
+
+------------------------------------------------------------------------
 
 
 
