@@ -108,6 +108,37 @@ Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
 
 ------------------------------------------------------------------------
 
+## Regras de Negócio
+
+1.  Criar venda: validar itens, salvar.
+2.  Criar pagamento: montar requisição, enviar ao MP.
+3.  Tratar resposta: salvar id externo, status, links/QR.
+4.  Webhook: confirmar no MP e sincronizar status.
+5.  Idempotência: usar `idempotency-key`.
+
+------------------------------------------------------------------------
+
+## Integração Mercado Pago
+
+-   **SDK oficial Java**
+-   **Credenciais**: ACCESS_TOKEN seguro
+-   **Criar pagamento**: enviar valor, descrição, `external_reference`
+-   **Status**: approved, in_process, rejected
+-   **Webhook**: URL pública configurada
+-   **Confirmação ativa**: sempre revalidar status consultando MP
+
+------------------------------------------------------------------------
+
+## Banco de Dados
+
+-   Tabelas: `produto`, `cliente`, `venda`, `item_venda`, `pagamento`,
+    `transacao_pagamento`, `notificacao_webhook`
+-   Relacionamentos:
+    -   venda 1---N item_venda
+    -   venda 1---1 pagamento
+    -   pagamento 1---N transacao_pagamento
+
+------------------------------------------------------------------------
 
 
 
