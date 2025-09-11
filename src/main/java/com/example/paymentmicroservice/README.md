@@ -159,6 +159,15 @@ Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
 
 ------------------------------------------------------------------------
 
+## Testes
+
+-   Unitários
+-   Integração
+-   Contract/API
+-   Fluxo feliz, pendente, rejeitado, erro
+-   Idempotência
+
+------------------------------------------------------------------------
 
 
 
