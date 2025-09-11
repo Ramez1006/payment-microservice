@@ -169,7 +169,18 @@ Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
 
 ------------------------------------------------------------------------
 
+## Passos Práticos
 
+1.  Criar projeto Spring Boot
+2.  Configurar banco e entidades
+3.  Definir enums de status
+4.  Criar DTOs
+5.  Implementar service de venda/pagamento
+6.  Subir endpoint do webhook
+7.  Integrar SDK MP
+8.  Adicionar logs + Swagger
+9.  Testes locais + ngrok
+10. Deploy (Docker)
 
 
 
