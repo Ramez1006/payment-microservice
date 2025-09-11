@@ -140,6 +140,24 @@ Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
 
 ------------------------------------------------------------------------
 
+## Segurança
+
+-   HTTPS obrigatório
+-   Segredos em variáveis de ambiente
+-   Validações de entrada
+-   Autenticação da sua API
+-   Assinatura/validação de webhook
+-   LGPD: não guardar dados sensíveis do cartão
+
+------------------------------------------------------------------------
+
+## Erros e Reprocessos
+
+-   Falha na chamada: marcar como PROCESSANDO/FALHA_TEMPORARIA
+-   Webhook duplicado: marcar como processado/idempotência
+-   Time-outs: retry com backoff
+
+------------------------------------------------------------------------
 
 
 
