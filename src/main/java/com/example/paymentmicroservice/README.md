@@ -50,6 +50,33 @@
 
 ------------------------------------------------------------------------
 
+## Entidades (Classes)
+
+Cada entidade deve ter: **atributos**, **construtores**, **get/set**,
+**hashCode()**, **equals()**, **toString()**.
+
+### 1) Produto
+
+-   `id`, `nome`, `descricao`, `precoUnitario`, `ativo`
+
+### 2) Cliente
+
+-   `id`, `nome`, `email`, `documento`, `telefone`
+
+### 3) Venda
+
+-   `id`, `dataCriacao`, `itens (ItemVenda)`, `valorTotal`, `status`,
+    `clienteId`
+
+### 4) ItemVenda
+
+-   `id`, `produtoId`, `quantidade`, `precoUnitario`, `subtotal`
+
+### 5) Pagamento
+
+-   `id`, `vendaId`, `metodo`, `status`, `valor`, `descricao`,
+    `mercadoPagoPaymentId`, `qrCode/codigoBarras/linkPagamento`,
+    `criadoEm`, `atualizadoEm`
 
 
 
