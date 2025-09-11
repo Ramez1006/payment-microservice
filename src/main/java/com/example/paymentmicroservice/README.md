@@ -35,6 +35,63 @@
 
 ## Desenho de Microserviço
 
+-   **API HTTP REST** (ex.: `/vendas`, `/pagamentos`,
+    `/webhooks/mercadopago`).
+-   **Camadas**:
+    -   **Controller** (recebe requisições HTTP).
+    -   **Service** (regras de negócio).
+    -   **Repository** (acesso ao banco).
+    -   **Cliente de Integração** (classe que chama o Mercado Pago via
+        SDK).
+-   **Mensageria (opcional)**: fila para reprocessar pagamentos ou lidar
+    com picos.
+-   **Observabilidade**: logs, métricas simples (tempo de chamada, taxa
+    de erro).
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
