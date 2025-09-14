@@ -1,4 +1,4 @@
-## Pacotes
+## Pacote
 
 ### `model` ou `entity`
 
