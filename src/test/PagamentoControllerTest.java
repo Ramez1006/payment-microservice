@@ -1,4 +1,4 @@
-package com.example.paymentmicroservice.test;
+package com.example.paymentmicroservice.PagamentoControllerTest;
 
 import com.example.paymentmicroservice.entity.Pagamento;
 import com.example.paymentmicroservice.repository.PagamentoRepository;

@@ -1,4 +1,4 @@
-package com.example.paymentmicroservice.dto;
+package com.example.paymentmicroservice.dto.PagamentoResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
